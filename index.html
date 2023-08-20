@@ -169,15 +169,15 @@
                     <div class="left">
                         <div class="location">
                             <div id="daumRoughmapContainer1692347141082"
-                                class="root_daum_roughmap root_daum_roughmap_landing"></div>
+                                class="root_daum_roughmap root_daum_roughmap_landing" style="width:100%"></div>
                             <script charset="UTF-8" class="daum_roughmap_loader_script"
                                 src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
                             <script charset="UTF-8">
                                 new daum.roughmap.Lander({
                                     "timestamp": "1692347141082",
                                     "key": "2fvw9",
-                                    "mapWidth": "570",
-                                    "mapHeight": "auto"
+                                    // "mapWidth": "570",
+                                    // "mapHeight": "auto" 반응형을 위해 style="width:100% 를 줌.
                                 }).render();
                             </script>
                         </div>
@@ -223,6 +223,14 @@
                                 </li>
                             </ul>
                         </div>
+                        <div class="circle_btn">
+                            <div class="rotate_txt">
+                                <img src="./images/rotate_txt.png" alt="">
+                            </div>
+                            <div class="rotate_img">
+                                <img src="./images/rotate_img.png" alt="">
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -231,26 +239,23 @@
 
         <!-- footer -->
         <footer class="footer">
-            <div class="inner">
+            <div class="ft_wrap inner">
                 <address>서울특별시 강남구 학동로3길 27, 3층(논현동, 메리디엄타워)</address>
-                <ul class="footer_customer">
+                <ul class="author">
                     <li>CEO. 이경근(David Lee)</li>
                     <li>E-mail. info@evermodel.com</li>
                     <li>Tel Number. +82-2-3443-7011</a></li>
                     <li>e-mail : jjs3354@naver.com</li>
                 </ul>
-                <div class="copy">
-                    &copy; Ever Models.
-                </div>
+            </div>
+            <div class="copy">
+                &copy; Ever Models.
             </div>
         </footer>
     </div>
-
     <div class="to_top">
         <i class="xi-angle-up"></i>
     </div>
-
-
 </body>
 
 </html>

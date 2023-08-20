@@ -52,16 +52,9 @@ $(function () {
     });
 
 
-
-
-
-
-
-    $(function () {
-        $('.to_top').on('click', function () {
-            $('html, body').animate({ scrollTop: 0 }, 500);
-            return false;
-        });
+    $('.to_top').on('click', function () {
+        $('html, body').animate({ scrollTop: 0 }, 500);
+        return false;
     });
 
     $(window).on('scroll', function () {
@@ -70,9 +63,21 @@ $(function () {
         } else {
             $('.to_top').fadeOut();
         }
-
     });
 
 
+    // 모바일
+    $('.header .service').on('click', function () {
+        $('.gnb').toggleClass('on');
+    });
+
+    $('.header').on('scroll touchmove mousewheel', function (e) {
+        e.preventDefault();
+        e.stopPropagation();
+        return false;
+    });
 
 })
+
+
+
